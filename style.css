@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Hind Siliguri', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: #000b38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login h1 {
+  font-size: 3vw;
+  letter-spacing: 4px;
+  color: #81badb;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.left-login-image {
+  width: 25vw;
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #071652;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1 {
+  color: #81badb;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.text-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.text-field input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #2c4091;
+  color: #f0ffffde;
+  font-size: 12px;
+  box-shadow: 0px 10 px 4px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+.text-field label {
+  width: 100%;
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+.text-field input::placeholder {
+  color: #f0ffff94;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  margin: 25px;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #071652;
+  font-size: 16px;
+  cursor: pointer;
+  background: #81badb;
+  box-shadow: 0px 10px 40px -12px #80aadb;
+}
+.btn-login:hover {
+  background: #000b38;
+  color: #81badb;
+}
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+  .left-login h1 {
+    display: none;
+  }
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+  .left-login-image {
+    width: 45vh;
+  }
+}
+
+.card-login {
+  width: 90%;
+}
